@@ -1,27 +1,23 @@
+import "./App.css";
+import React from "react";
+import Header from "./compoment/header/Header";
+import About from "./compoment/about/About";
+import Contact from "./compoment/contact/Contact";
+import Experience from "./compoment/experience/Experience";
 
-import './App.css';
-import Header from './compoment/header/Header';
-import About from './compoment/about/About';
-import Contact from './compoment/contact/Contact';
-import Experience from './compoment/experience/Experience';
-
-
-
-import React from 'react'
+import Nav from "./compoment/nav/Nav";
+import { findAllByDisplayValue } from "@testing-library/react";
 
 const App = () => {
   return (
-    <div>
-    <Header />
-    <About />
-    <Contact />
-    <Experience />
-    
+    <>
+      <Header />
+      <Nav />
+      <About />
+      <Contact />
+      <Experience />
+    </>findAllByDisplayValue
+  );
+};
 
-    </div>
-    
-
-  )
-}
-
-export default App
+export default App;
