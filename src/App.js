@@ -16,7 +16,7 @@ const App = () => {
       <About />
       <Contact />
       <Experience />
-    </>findAllByDisplayValue
+    </>
   );
 };
 
