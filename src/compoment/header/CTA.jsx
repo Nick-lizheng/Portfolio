@@ -1,10 +1,13 @@
 import React from 'react'
-import CV from '../..asresst/Python - Li Zheng.pdf'
+import CV from '../../asresst/cv.pdf'
 
-export const CTA = () => {
+const CTA = () => {
   return (
     <div className='cta'>
-        <a href=""></a>
+        <a href={CV} download className='btn'>Download CV</a>
+        <a href="#contact" className='btn btn-primary'>Let's Talk</a>
     </div>
   )
 }
+
+export default CTA
