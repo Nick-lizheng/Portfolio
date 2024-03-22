@@ -58,11 +58,11 @@ header {
 .img {
     background: var(--color-primary);
     width: 20rem;
-    height: 20rem;
+    height: 30rem;
     position: absolute;
     left: calc(50% - 9.5rem);
     margin-top: 2rem;
-    border-radius: 12rem 12rem 12rem 12rem;
+    border-radius: 12rem 12rem 0rem 0rem;
 }
 
 
