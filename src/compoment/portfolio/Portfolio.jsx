@@ -8,7 +8,7 @@ const data = [
     id: 1,
     Image: PROJECT1,
     title: 'Happsa-waste-capture-portal',
-    github: 'https://github.com',
+    github: 'https://github.com/nickzheng87',
     demo: 'https://waste-capture-portal.happsa.com.au/'
   }
 ]

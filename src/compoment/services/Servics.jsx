@@ -54,6 +54,12 @@ const Servics = () => {
                 <p>Buliding FrontEnd</p>
 
               </li>
+
+              <li>
+                <MdOutlineCheck className='service__list-icon'/>
+                <p>Buliding BackEnd</p>
+
+              </li>
           
             </ul>
 
