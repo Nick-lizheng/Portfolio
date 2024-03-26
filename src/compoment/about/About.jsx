@@ -43,7 +43,7 @@ const About = () => {
           </div>
 
           <p>
-            Just keep leaning and make it happen.
+            Just keep learning and make it happen.
           </p>
 
           <a href="#contact" className="btn btn-primary">Let's Talk</a>
