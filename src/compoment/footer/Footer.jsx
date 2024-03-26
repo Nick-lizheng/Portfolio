@@ -28,7 +28,7 @@ const Footer = () => {
       <div className='footer__socials'>
         <a href="https://www.linkedin.com/in/nick-li-zheng-402062bb/.com" target='_blank' rel='noopener noreferrer'><BsLinkedin/></a>
         <a href="https://www.instagram.com/nics_034/" target='_blank' rel='noopener noreferrer'><BsInstagram/></a>
-        <a href="https://github.com/nickzheng87" target='_blank' rel='noopener noreferrer'><BsGithub/></a>
+        <a href="https://github.com/Nick-lizheng" target='_blank' rel='noopener noreferrer'><BsGithub/></a>
 
       </div>
 

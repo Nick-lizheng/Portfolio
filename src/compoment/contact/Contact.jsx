@@ -17,9 +17,11 @@ const Contact = () => {
     .then(
       () => {
         console.log('SUCCESS!');
+        alert('SUCCESS!');
       },
       (error) => {
         console.log('FAILED...', error.text);
+        alert('FAILED...!');
       },
     );
 
