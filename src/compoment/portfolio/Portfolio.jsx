@@ -1,6 +1,7 @@
 import React from 'react'
 import "./portfolio.css"
 import PROJECT1 from "../../asresst/project1.jpg"
+import PROJECT2 from "../../asresst/project team formation program.png"
 
 
 const data = [
@@ -10,6 +11,13 @@ const data = [
     title: 'Happsa-waste-capture-portal',
     github: 'https://github.com/Nick-lizheng',
     demo: 'https://waste-capture-portal.happsa.com.au/'
+  },
+  {
+    id: 2,
+    Image: PROJECT2,
+    title: 'Project-Team-Auto-Formation-GUI',
+    github: 'https://github.com/Nick-lizheng/Project-Team-Auto-Formation-GUI',
+    demo: ''
   }
 ]
 
