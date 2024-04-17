@@ -1,18 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import "./nav.css"
-import {AiOutlineHome} from 'react-icons/ai'
-import {AiOutlineUser} from 'react-icons/ai'
-import {BiBook} from 'react-icons/bi'
+// 导入图标...
+import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai'
+import {BiBook, BiMessageSquareDetail} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
-import {BiMessageSquareDetail} from 'react-icons/bi'
-import {useState} from 'react'
 import {FaRegFolderOpen} from 'react-icons/fa6'
 import {CgCommunity} from 'react-icons/cg'
 
-
-
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#')
+
+  const handleScroll = () => {
+    const sections = document.querySelectorAll('section');
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
+        setActiveNav(`#${section.id}`);
+      }
+    });
+  };
+  
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <nav>
       <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
